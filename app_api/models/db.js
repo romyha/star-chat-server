@@ -1,6 +1,7 @@
 require('./stars');
 
 var mongoose = require('mongoose');
+var debug = require('debug')('inventory-service:db');
 
 var dbURI = 'mongodb://localhost:27017/star-chat';
 
