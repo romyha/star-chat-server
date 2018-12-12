@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>Callback</h1>
+    <%= jwt %>
+</body>
+<script>
+    var jwt = '<%= jwt %>';
+
+    if (window.opener) {
+        window.opener.postMessage(jwt, '*');
+    } else {
+        localStorage.setItem('jwt', jwt);
+        window.location.replace("inventory://" + jwt);
+    }
+</script>
+
+</html>

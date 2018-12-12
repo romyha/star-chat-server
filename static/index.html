@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="./lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./lib/datepicker-for-ionic/dist/style.css" rel="stylesheet">
+    <link href="./lib/fonts/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./lib/fonts/fontello/fontello-64f9df99/css/fontello.css" rel="stylesheet">
+    <link href="./lib/fonts/fontello/fontello-64f9df99/css/fontello-codes.css" rel="stylesheet">
+
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="./lib/jquery-1.11.0.min.js"></script>
+    <script src="./lib/ionic/js/ionic.bundle.js"></script>
+    <script src="./lib/ionic/js/angular/angular-resource.min.js"></script>
+    <script src="./lib/angular-route.min.js"></script>
+    <script src="./lib/datepicker-for-ionic/dist/templates.min.js"></script>
+    <script src="./lib/datepicker-for-ionic/dist/ionic-datepicker.min.js"></script>
+
+    <!-- Auth0 Lock -->
+    <script src="./lib/auth0-lock/build/auth0-lock.js"></script>
+    <!-- auth0-angular -->
+    <script src="./lib/auth0-angular/build/auth0-angular.js"></script>
+    <!-- angular storage -->
+    <script src="./lib/a0-angular-storage/dist/angular-storage.js"></script>
+    <!-- angular-jwt -->
+    <script src="./lib/angular-jwt/dist/angular-jwt.js"></script>
+
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="./lib/ng-cordova-master/dist/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="./files/app.js"></script>
+    <script src="./files/app/app.controller.js"></script>
+    <script src="./files/settings/settings.controller.js"></script>
+    <script src="./files/help/help.controller.js"></script>
+    <script src="./files/auth/login.controller.js"></script>
+    <script src="./files/auth/register.controller.js"></script>
+    <script src="./files/home/listing.controller.js"></script>
+    <script src="./files/editPages/editChange.controller.js"></script>
+    <script src="./files/addPages/addChange.controller.js"></script>
+    <script src="./files/addPages/addDevice.controller.js"></script>
+    <script src="./files/common/services/authentication.service.js"></script>
+    <script src="./files/common/services/deviceData.service.js"></script>
+    <script src="./files/common/services/path.service.js"></script>
+    <script src="./files/common/services/popup.service.js"></script>
+    <script src="./files/common/directives/focus.directive.js"></script>
+    <script src="./files/common/directives/positionBarAndContent.directive.js"></script>
+    <script src="./files/common/filters/formatUser.filter.js"></script>
+
+</head>
+
+<body ng-app="pm">
+
+    <ion-nav-view></ion-nav-view>
+
+</body>
+
+</html>

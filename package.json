@@ -1,0 +1,46 @@
+{
+  "name": "star-chat-server",
+  "version": "0.1.0",
+  "description": "Star Chat Server",
+  "author": "Romy Haacke <romy@haacke.tv>",
+  "repository": "https://github.com/romyha/star-chat-server",
+  "license": "ISC",
+  "scripts": {
+    "start": "node bin/www"
+  },
+  "engines": {
+    "node": "~6.2.1",
+    "npm": "~3.9.3"
+  },
+  "dependencies": {
+    "async": "^2.0.1",
+    "body-parser": "^1.15.2",
+    "connect-busboy": "0.0.2",
+    "cookie-parser": "^1.3.5",
+    "cors": "~2.7.1",
+    "debug": "~2.2.0",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.4.2",
+    "express": "~4.13.1",
+    "express-jwt": "^3.4.0",
+    "fs": "0.0.2",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^7.0.0",
+    "mongoose": "^4.13.17",
+    "morgan": "~1.6.1",
+    "multer": "^1.1.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-openid": "^0.4.0",
+    "passport-openidconnect": "0.0.1",
+    "request": "^2.88.0",
+    "response-time": "^2.3.2",
+    "s3fs": "^2.4.7",
+    "serve-favicon": "~2.3.0",
+    "socket.io": "^2.2.0",
+    "uglify-js": "^2.6.2"
+  },
+  "devDependencies": {
+    "jasmine": "^2.99.0"
+  }
+}
