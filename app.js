@@ -5,6 +5,7 @@ var busboy = require('connect-busboy');
 var responseTime = require('response-time')
 var cookieParser = require('cookie-parser');
 require('ejs');
+require('dotenv').config()
 
 require('./app_api/models/db');
 var routesApi = require('./app_api/routes/index')
@@ -16,7 +17,7 @@ app.engine('html', require('ejs').renderFile);
 
 var corsOptions = {
     credentials: true,
-    origin: "http://localhost:8100"
+    origin: "*"
 }
 app.use(cors(corsOptions));
 

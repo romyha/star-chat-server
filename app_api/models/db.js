@@ -1,6 +1,8 @@
 require('./stars');
 
 var mongoose = require('mongoose');
+var mongodb = require('mongodb');
+var MongoClient = mongodb.MongoClient;
 var debug = require('debug')('inventory-service:db');
 
 var dbURI = 'mongodb://localhost:27017/star-chat';
@@ -10,6 +12,8 @@ if (process.env.NODE_ENV === 'production') {
 } else if (process.env.NODE_ENV === 'test') {
     dbURI = 'mongodb://localhost:27017/star-chat-test';
 }
+
+//mongoose.connect(dbURI);
 
 mongoose.connect(dbURI);
 

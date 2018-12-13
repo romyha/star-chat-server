@@ -1,4 +1,8 @@
-# Star Chat Server    
+# Star Chat Server  
+
+## Install dependencies
+
+    $ npm install
     
 ## Running
 
