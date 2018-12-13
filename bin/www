@@ -26,7 +26,7 @@ io = io.listen(server);
 io.on('connection', function (socket) {
     console.log('a user connected');
     socket.on('chat message', function (message) {
-        socket.emit('answer', message + 'accepted');
+        socket.emit('answer', 'Thanks for your message, I will do ' + message + ' as soon as possible!');
     });
 });
 
