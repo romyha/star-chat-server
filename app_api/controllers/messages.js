@@ -7,9 +7,7 @@ var sendJsonResponse = function (res, status, content) {
 };
 
 module.exports.getMessagesFromChat = function (req, res) {
-    console.log(req.body, req.params);
     User.findOne({ email: req.params.email }).select('messages').exec((err, user) => {
-        console.log(err, user);
         if (!user) {
             sendJsonResponse(res, 404, {
                 "message": "user not found"
@@ -28,7 +26,6 @@ module.exports.getMessagesFromChat = function (req, res) {
 };
 
 module.exports.messagesCreate = function (req, res) {
-    console.log(req.params, req.body);
     if (req.params.email && req.body.starid) {
         
         User.findOne({ email: req.params.email }).exec((err, user) => {
