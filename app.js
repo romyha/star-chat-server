@@ -5,9 +5,12 @@ var busboy = require('connect-busboy');
 var responseTime = require('response-time')
 var cookieParser = require('cookie-parser');
 require('ejs');
-require('dotenv').config()
-
+require('dotenv').config();
 require('./app_api/models/db');
+require('./app_api/config/passport');
+var passport = require('passport');
+
+
 var routesApi = require('./app_api/routes/index')
 
 var app = express();
@@ -30,6 +33,7 @@ app.use(bodyParser.urlencoded({
 app.use(busboy());
 app.use(responseTime())
 
+app.use(passport.initialize());
 app.use('/api', routesApi);
 
 app.use('/', function (req, res) {
